@@ -97,17 +97,17 @@ Write a file, app.js, which will perform the following operation on each of thes
 
 For each file:
  1. Check if a corresponding result file already exists for this file, if so query and print the result already stored.
- 2. If no result file is found, get the contents of the file using getFileAsString
- 3. Simplify the text, and store that text in a file named fileName.debug.txt
- 4. Run the text metrics, and store those metrics in fileName.result.json
+ 2. If no result file is found, get the contents of the file using <code>getFileAsString</code>
+ 3. Simplify the text, and store that text in a file named <code>fileName.debug.txt</code>
+ 4. Run the text metrics, and store those metrics in <code>fileName.result.json</code>
  5. Print the resulting metrics
  
-So for example, with chapter1.txt, you will:
+So for example, with <code>chapter1.txt</code>, you will:
 
- 1. Check if chapter1.result.json exists; if it does, query and print the resulting object
- 2. If no result is found, perform getFileAsString(chapter1.txt)
- 3. simplify the text and store the result in chapter1.debug.txt
- 4. Run the text metrics and store those results in chapter1.result.json
+ 1. Check if <code>chapter1.result.json</code> exists; if it does, query and print the resulting object
+ 2. If no result is found, perform <code>getFileAsString(chapter1.txt)</code>
+ 3. simplify the text and store the result in <code>chapter1.debug.txt</code>
+ 4. Run the text metrics and store those results in <code>chapter1.result.json</code>
  5. Print the resulting metrics
  
 <br><strong>General Requirements</strong></br>
