@@ -47,7 +47,7 @@ Remove all non-alphanumeric characters (?.!'," and so on)
 Convert all white space to simple spaces (new lines become spaces; tabs become spaces, etc)
 Return the result.
 Secondly, this module will export a method, <code>createMetrics(text)</code> which will scan through the text, simplify the text, and return an object with the following information based on the simplified text:
-<pre><code>
+```javascript
 {
     totalLetters: total number of letters in the text,
     totalWords: total number of words in the text,
@@ -56,14 +56,14 @@ Secondly, this module will export a method, <code>createMetrics(text)</code> whi
     averageWordLength: the average number of letters in a word in the text,
     wordOccurrences: a dictionary of each word (lowercased, no punctuation) and how many times each word occurs in the text.
  }
- </code></pre>
+ ```
  
  So running:
- <pre><code>
+ ```javascript
 createMetrics("Hello, my friends! This is a great day to say hello.\n\n\tHello! 2 3 4 23")
- </code></pre>
+ ```
 Will return:
-<pre><code>
+```javascript
  totalLetters: 49,
     totalWords: 16,
     uniqueWords: 14,
@@ -86,7 +86,7 @@ Will return:
         23: 1
     }
 }   
-</code></pre>
+```
 
 <br><strong>app.js</strong></br>
 Write a file, app.js, which will perform the following operation on each of these files (found in the Canvas Lecture 3 Module):
